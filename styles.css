@@ -1,8 +1,19 @@
-div {
-	height: 150px;
-	width: 150px;
-	background-color: tomato;
+:root {
+	--main-color: #489ee3;
+	--default-border: 1px solid var(--main-color);
 }
-span {
-	background-color: blue;
+body {
+	height: 1000vh;
+	margin: 50px;
+}
+/* span {
+	color: tomato;
+	background-color: yellowgreen;
+} */
+p {
+	background-color: var(--main-color);
+}
+a {
+	color: var(--main-color);
+	border: var(--default-border);
 }

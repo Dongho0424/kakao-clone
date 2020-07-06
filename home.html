@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="kr">
 	<head>
-		<title>Home - My first website.</title>
+		<title>The Dongho Times</title>
 		<meta charset="utf-8" />
-		<link href="styles.css" rel="stylesheet" />
+		<!-- <link href="styles.css" rel="stylesheet" /> -->
+		<style>
+			body {
+				display: flex;
+				height: 100vh;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
+			div {
+				background-color: teal;
+				width: 200px;
+				height: 200px;
+			}
+
+			@media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: landscape) {
+				div {
+					background-color: aqua;
+				}
+			}
+			span {
+				font-size: 36px;
+			}
+			@media screen and (orientation: landscape) {
+				span {
+					display: none;
+				}
+			}
+			@media print {
+				body {
+					background-color: salmon;
+				}
+			}
+		</style>
 	</head>
 	<body>
-		<img src="images/iu1.jpg" /><br />
 		<div></div>
-		<div></div>
-		<div></div>
-		<span>hello!</span>
-		<span>hello!</span>
-		<span>hello!</span>
+		<span>Please Flip your Phone :(</span>
 	</body>
 </html>
